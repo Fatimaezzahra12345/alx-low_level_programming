@@ -10,9 +10,16 @@ int main(void)
 	char c = 'a';
 
 	while (n < 10)
+	{
 		putchar(n + '0');
+		n++;
+	}
+
 	while (c < 'g')
+	{
 		putchar(c);
+		c++;
+	}
 	putchar('\n');
 	return (0);
 }
