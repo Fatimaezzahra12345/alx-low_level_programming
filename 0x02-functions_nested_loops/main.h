@@ -6,6 +6,7 @@
  */
 
 int printf(const char *, ...);
+void print_alphabet(void);
 
 
 
