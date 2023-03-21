@@ -2,7 +2,7 @@
 #define MAIN_H
 
 /*
- * function prototypes
+ * function prototype
  */
 
-int printf(char c);
+int printf(const char *, ...);
