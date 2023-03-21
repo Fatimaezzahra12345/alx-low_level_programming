@@ -1,8 +1,7 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * main-main block
- * Return:0
+ * print_alphabet-main block
  */
 void print_alphabet(void)
 {
@@ -14,6 +13,4 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
