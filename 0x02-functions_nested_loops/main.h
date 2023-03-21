@@ -6,3 +6,20 @@
  */
 
 int printf(const char *, ...);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
