@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *  print_line()-block
+ *  @n: parameter
  */
 void print_line(int n)
 {
