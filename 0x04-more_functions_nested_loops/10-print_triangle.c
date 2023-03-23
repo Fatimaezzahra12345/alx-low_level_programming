@@ -1,18 +1,33 @@
 #include "main.h"
+
 /**
- * print_triangle()-block
- * @size: parameter
+ * print_triangle - entry point
+ * author AymanSdk
+ *@size: size of the triangle
+ * Return: void
  */
+
 void print_triangle(int size)
 {
-	int i, j;
+	int row, hashes, spaces;
 
-	for (i = size ; i > 0 ; i--)
+	if (size <= 0)
 	{
-		for (j = 0 ; j < i - 1 ; j++)
-			_putchar(' ');
-		for (k = 0 ; k < size - j ; k++)
-			_putchar('#');
 		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
+		{
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				_putchar(' ');
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
