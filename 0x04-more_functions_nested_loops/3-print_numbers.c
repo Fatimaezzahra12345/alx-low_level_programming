@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * print_numbers()-block
- * Return: notihing
  */
 void print_numbers(void)
 {
