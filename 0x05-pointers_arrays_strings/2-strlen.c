@@ -2,7 +2,7 @@
 /**
  * _strlen()-block _strlen()
  * @s: parameter
- * Return : an integer
+ * Return: an integer
  */
 int _strlen(char *s)
 {
@@ -12,6 +12,6 @@ int _strlen(char *s)
 	{
 		i++;
 	}
-	return (i + 1);
+	return (i);
 }
 
