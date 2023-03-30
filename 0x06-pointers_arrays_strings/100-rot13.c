@@ -6,17 +6,22 @@
  * Return: address of s
  */
 char *rot13(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] >= 'a'  || s[i] <= 'z')
+	int i, j;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	for (i = 0; *(s + i); i++)
+	{
+		for (j = 0; j < 52; j++)
 		{
-			s[i] += 13;
+			if (a[j] == *(s + i))
+			{
+				*(s + i) = b[j];
+				break;
+			}
 		}
-		if (s[i] >= 'A'  || s[i] <= 'Z')
-			s[i] += 13;
 	}
 	return (s);
 }
+
