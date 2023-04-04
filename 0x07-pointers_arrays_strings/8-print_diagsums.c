@@ -15,9 +15,9 @@ void print_diagsums(int *a, int size)
 		p = (b * size) + b;
                 c += *(a+p);
 	}
-	for (b = size - 1; b <= 0; b--)
+	for (b = 0; b < size; b++)
 	{
-		p = (j * size) + (size - 1 - j);
+		p = (b * size) + (size - 1 - b);
 		k += *(a + p);
 	}
 	printf("%d, %d\n", c, k);
