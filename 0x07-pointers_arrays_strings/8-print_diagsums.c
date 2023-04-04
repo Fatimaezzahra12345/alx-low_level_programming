@@ -8,15 +8,17 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int  c = 0, b, k = 0;
+	int  c = 0, b, k = 0, p;
 
 	for (b = 0; b < size; b++)
 	{
-		c += a[b][b];
+		p = (b * size) + b;
+                c += *(a+p);
 	}
 	for (b = size - 1; b <= 0; b--)
 	{
-		k += a[b][b];
+		p = (j * size) + (size - 1 - j);
+		k += *(a + p);
 	}
 	printf("%d, %d\n", c, k);
 }
