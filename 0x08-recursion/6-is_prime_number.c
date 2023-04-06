@@ -8,12 +8,14 @@
  */
 int check(int a, int b)
 {
-	if (b < 2 || b % a == 0)
+	if (a < 2 || a % b == 0)
 		return (0);
-	else if (a > b / 2)
+	else if (a == 2)
+		return (1);
+	else if (b > a / 2)
 		return (1);
 	else
-		return (check(a + 1, b));
+		return (check(a, b + 1));
 }
 
 /**
@@ -23,8 +25,6 @@ int check(int a, int b)
  */
 int is_prime_number(int n)
 {
-	if (n == 2)
-		return (1);
-	return (check(2, n));
+	return (check(n, 2));
 }
 
