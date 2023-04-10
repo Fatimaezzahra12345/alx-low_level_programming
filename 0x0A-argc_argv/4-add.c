@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - main block
+ * main - adds positive numbers.
  * @argc: argument count
  * @argv: arguments
  *
