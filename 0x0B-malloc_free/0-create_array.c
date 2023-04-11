@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdlib.h>
 /**
  * create_array()-create_array()block
  * @size: parameter
