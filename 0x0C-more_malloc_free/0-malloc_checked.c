@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib>
 /**
- * malloc_checked()-block malloc_checked()
+ * malloc_checked()- block malloc_checked()
  * @b: parameter
  * Return: a pointer to the allocated memory
  */
