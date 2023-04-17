@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "dog.h"
+
 /**
+ * print_dog - struct dog
+ * @d: pointer
  *
- * print_dog - prints a struct dog
- * @d: pointer to structure
- *
- * Return: void
+ * Return: void nothing
  */
 void print_dog(struct dog *d)
 {
