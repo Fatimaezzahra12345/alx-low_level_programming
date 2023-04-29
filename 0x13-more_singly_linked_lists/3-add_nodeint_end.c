@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * add_nodeint_end()-add_nodeint_end()
- * @h: a parameter
+ * @head:  parameter
  * @n: a aparameter
  *
  * Return: listint_t
