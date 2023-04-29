@@ -4,21 +4,21 @@
 
 /**
  * print_listint - prints all elements of a listint_t list
- * @h: head node
+ * @h: parameter
  *
- * Return: number of nodes
+ * Return: an int
  */
 size_t print_listint(const listint_t *h)
 {
-	const listint_t *tmp;
-	size_t size;
+	const listint_t *new;
+	size_t num;
 
-	tmp = h, size = 0;
-	while (tmp)
+	new = h, num = 0;
+	while (new)
 	{
-		printf("%d\n", tmp->n);
-		size++;
-		tmp = tmp->next;
+		printf("%d\n", new->n);
+		num++;
+		new = new->next;
 	}
-	return (size);
+	return (num);
 }
