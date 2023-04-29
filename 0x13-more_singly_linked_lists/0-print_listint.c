@@ -2,6 +2,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include <stddef.h>
+
 /**
  * print_listint()-print_listint() block
  * @h: parameter
@@ -19,4 +20,3 @@ size_t print_listint(const listint_t *h)
 	}
 	return (n);
 }
-
