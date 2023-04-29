@@ -20,7 +20,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	{
 		if (i == index)
 			return (new);
-		new = head->next;
+		new = new->next;
 	}
-	return (NULLL);
+	return (NULL);
 }
