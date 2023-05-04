@@ -1,5 +1,5 @@
-#ifndef H
-#define H
+#ifndef MAIN_H
+#define MAIN_H
 
 unsigned int binary_to_uint(const char *);
 
@@ -26,4 +26,4 @@ unsigned int flip_bits(unsigned long int , unsigned long int);
 void convert_to_binary3(unsigned long int, unsigned short *);
 int get_endianness(void);
 
-#endif /* H */
+#endif /* MAIN_H */
