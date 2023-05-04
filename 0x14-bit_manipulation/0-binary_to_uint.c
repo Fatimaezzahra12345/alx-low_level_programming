@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+
 /**
  * binary_to_uint()-binary_to_uint()
  * @b: parameter
@@ -7,25 +7,22 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int nm = 0;
-	int size = 0, sum = 0, i;
+	int i;
+	unsigned int uint, pow;
 
 	if (!b)
 		return (0);
-	while (b[size])
-		size++;
-	for (i = 0; i < size; i++)
+	i = 0;
+	while (b[i])
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
+		i++;
 	}
-	i = size;
-	--i;
+	--i, uint = 0, pow = 0;
 	while (i >= 0)
 	{
-		nm += (b[i--] - 48) << (sum++);
+		uint += (b[i--] - 48) << (pow++);
 	}
-	return (nm);
+	return (uint);
 }
-
-
