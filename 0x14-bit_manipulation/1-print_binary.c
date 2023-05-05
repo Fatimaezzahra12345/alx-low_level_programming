@@ -8,7 +8,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int tmp;
+	unsigned long int aws;
 
 	aws = n >> 1;
 	if (aws)
