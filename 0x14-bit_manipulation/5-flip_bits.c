@@ -5,7 +5,7 @@
  * @n: first number
  * @m: second number
  *
- * Return : unsigned int
+ * Return: unsigned int
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
